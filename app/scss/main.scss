@@ -1,0 +1,26 @@
+$ff: 'Raleway-SemiBold';
+$src: '../fonts/raleway/' + $ff + '.ttf';
+
+@mixin font-source($family, $source: false, $size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $family;
+    @if $source {src: url($source); }
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@font-face { @include font-source($ff, $src)}
+
+body {
+  font-family: $ff;
+}
+
+.square-border { @include border-radius(0px); }

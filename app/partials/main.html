@@ -1,0 +1,33 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <i class="fa fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control square-border" ng-model="searchString" placeholder="Search GitHub">
+      </div>
+      <button class="btn btn-default square-border" ng-click="searchGitHub();"><i class="fa fa-search" aria-hidden="true"></i></button>
+      <button class="btn btn-default square-border" ng-click="limpiar();"><i class="fa fa-eraser"></i></button>
+    </form>
+  </div>
+</nav>
+<div ng-if="error" class="alert alert-danger" role="alert">{{error.data.message}}</div>
+<table id="search-results" class="table table-hover">
+  <thead ng-if="results">
+    <tr>
+      <th>
+        NOMBRE DEL REPOSITORIO
+      </th>
+      <th>
+        URL
+      </th>
+    </tr>
+  </thead>
+  <tr ng-repeat="result in results">
+    <td >{{result.name}}</td>
+    <td ><a href="{{result.html_url}}" target="_blank">{{result.html_url}}</a></td>
+  </tr>
+</table>

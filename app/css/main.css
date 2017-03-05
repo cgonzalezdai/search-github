@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Raleway-SemiBold";
+  src: url("../fonts/raleway/Raleway-SemiBold.ttf"); }
+
+body {
+  font-family: "Raleway-SemiBold"; }
+
+.square-border {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px; }

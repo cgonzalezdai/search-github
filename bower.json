@@ -1,0 +1,29 @@
+{
+  "name": "gulp-angular-sass",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Klaus <claudiogonzalezdai@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "angular": "^1.6.2",
+    "jquery": "^3.1.1",
+    "angular-animate": "^1.6.2",
+    "animate.css": "^3.5.2"
+  }
+}
